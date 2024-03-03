@@ -158,10 +158,10 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Lib
-lib/
+# Ignore everything in the lib directory
+lib/*
 
-# Except
+# Don't ignore these files
 !lib/utils.py
 !lib/agents.py
 !lib/EightPuzzle.py
