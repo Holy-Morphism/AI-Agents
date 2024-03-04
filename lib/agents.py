@@ -627,6 +627,7 @@ class GraphicEnvironment(XYEnvironment):
         self.bounded = boundary
         self.colors = color
 
+
     def get_world(self):
         """Returns all the items in the world in a format
         understandable by the ipythonblocks BlockGrid."""
@@ -689,6 +690,7 @@ class GraphicEnvironment(XYEnvironment):
             for y in range(0, len(world[x])):
                 if len(world[x][y]):
                     self.grid[y, x] = self.colors[world[x][y][-1].__class__.__name__]
+
 
     def conceal(self):
         """Hide the BlockGrid for this world"""
